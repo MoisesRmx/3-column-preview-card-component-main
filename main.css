@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 400px;
+  height: auto;
+  padding: 50px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 15px 0 0 15px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 15px 15px 0;
+}
+
+.card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.card h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 80px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 18px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 30px;
+  width: 200px;
+  height: 60px;
+}
+
+.num1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.num2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.num3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.button:hover {
+  border: solid 3px hsla(0, 0%, 100%, 0.75);
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-family: 'Lexend Deca', sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width:800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 230vh;
+  }
+  .card {
+    width: 90vw;
+  }
+  .card p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+  .button {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+  }
+}
